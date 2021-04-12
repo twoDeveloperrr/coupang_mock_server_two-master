@@ -18,31 +18,25 @@ module.exports = function () {
     // app.use(express.static(process.cwd() + '/public'));
 
     /* App (Android, iOS) */
-    require('../src/app/routes/userRoute')(app);
+    require('../app/routes/userRoute')(app);
 
-    require('../src/app/routes/productRoute')(app);
+    require('../app/routes/productRoute')(app);
 
-    require('../src/app/routes/reviewRoute')(app);
+    require('../app/routes/reviewRoute')(app);
 
-    require('../src/app/routes/orderRoute')(app);
+    require('../app/routes/orderRoute')(app);
 
-    require('../src/app/routes/cartRoute')(app);
+    require('../app/routes/cartRoute')(app);
 
-    require('../src/app/routes/homeRoute')(app);
+    require('../app/routes/homeRoute')(app);
 
-    require('../src/app/routes/deliveryRoute')(app);
+    require('../app/routes/deliveryRoute')(app);
 
-    require('../src/app/routes/profileRoute')(app);
+    require('../app/routes/profileRoute')(app);
 
-    require('../src/app/routes/wishProductRoute')(app);
+    require('../app/routes/wishProductRoute')(app);
 
-    require('../src/app/routes/searchRoute')(app);
-    /* Web */
-    // require('../src/web/routes/indexRoute')(app);
+    require('../app/routes/searchRoute')(app);
 
-    // usersRoute 연결
-
-    /* Web Admin*/
-    // require('../src/web-admin/routes/indexRoute')(app);
     return app;
 };
